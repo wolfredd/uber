@@ -1,0 +1,3 @@
+catch error on signing up on both sides
+Trim what youre saving in db
+sign up and sign in when you dont give accurate details

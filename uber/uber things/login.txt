@@ -1,0 +1,60 @@
+// ignore_for_file: prefer_const_constructors
+
+import 'package:flutter/material.dart';
+
+class LoginScreen extends StatelessWidget{
+  @override
+  Widget build(BuildContext context){
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Column(
+        // ignore: prefer_const_literals_to_create_immutables
+        children: [
+          SizedBox(height: 65.0,),
+          Image(
+            image: AssetImage('images/logo.png'),
+            width: 350.0,
+            height: 350.0,
+            alignment: Alignment.center,
+          ),
+          SizedBox(height: 1,),
+          Text(
+            'Login as Rider',
+            style: TextStyle(fontSize: 24, fontFamily: "Brand Bold"),
+            textAlign: TextAlign.center,
+            ),
+
+
+            Padding(
+              padding: EdgeInsets.all(20),
+              child: Column(
+                // ignore: prefer_const_literals_to_create_immutables
+                children: [
+
+                  SizedBox(height: 1,),
+            TextField(
+              keyboardType: TextInputType.emailAddress,
+              decoration: InputDecoration(
+                labelText: "Email",
+                labelStyle: TextStyle(
+                  fontSize: 14
+                ),
+                hintStyle: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 10,
+                )
+              ),
+              style: TextStyle(fontSize: 14),
+            )
+            
+                ],
+              ),
+              )            
+        ],
+      )
+    );
+
+  }
+
+
+}

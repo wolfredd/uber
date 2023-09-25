@@ -1,0 +1,5 @@
+?
+late
+null exception = !
+create a variable and cast it
+In constructor just () not ({})
